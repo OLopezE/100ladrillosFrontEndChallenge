@@ -1,0 +1,271 @@
+.flex{
+    display: flex;
+    justify-content: space-between
+
+}
+
+.body{
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 50%;
+    min-width: 320px;
+    min-height: 50vh;
+
+}
+
+.register-icon{
+    width: 80%;
+    height: 80%;
+}
+
+.modalBackground{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(138, 138, 138, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    min-width: 400px;
+    width: 80%;
+    padding-left: 2%;
+
+
+}
+
+.modalContainer{
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 70%;
+    text-align: center;
+    
+}
+
+.closeButton{
+    position: absolute;
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    color: #fff;
+    right: 10px;
+    top: -30px;
+}
+
+.image-container{
+    height: 100%;
+    width: 40%;
+}
+.image{
+    width: 100%;
+}
+
+.modalFooter{
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+.modalText{
+    width: 80%;
+}
+
+
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.icon{
+    width: 100%;
+    height: 5rem;
+    
+}
+
+.footer{
+    display: flex;
+    gap: 1rem;
+    height: 5rem;
+    align-items: center
+}
+
+ul li{
+   color: rgb(94, 94, 94) 
+}
+
+ul li p{
+    color:rgb(146, 146, 146)
+}
+
+
+.button-form{
+    background-color: #FF5A60;
+    color: white;
+    height: 32px;
+    min-width: 100px;
+    border-radius: 4px;
+    font-weight: 100;
+}
+
+.button-form:disabled,
+.button-form[disabled]{
+    background-color: #eaeaea;
+    color:#8C8C8C;
+    
+
+}
+
+.sendSMSButton{
+    color: #8C8C8C;
+}
+.cancelButton{
+    color:#FF5A60;
+    background-color: #fff9f9;
+    border: 1px solid #ffdada;
+    font-weight: 100;
+
+}
+
+.phoneCode-input{
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(112, 112, 112);
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 8px;
+}
+.code-container{
+    display: flex;
+    justify-content: center;
+}
+
+.small-text{
+    color: rgb(146, 146, 146);
+    font-size: .8rem;
+}
+
+.requirement{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.input{
+    background-color: #ffff;
+    border: 1px solid rgba(168, 168, 168, 0.5);
+    width: 90%;
+    height: 2rem;
+    outline-color: #77c1ff;
+    border-radius: 4px;
+}
+
+.register-icons{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.icon-container{
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    box-shadow: rgb(0, 0, 0, 0.35) 1px 1px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-circle-container{
+    display: flex;
+    gap:1rem;
+    height: 100px;
+    justify-content: center;
+}
+
+.nav-circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(212, 212, 212);
+}
+
+.selected{
+    background-color: rgb(139, 139, 139);
+}
+
+.mobile{
+    display: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.back{
+    color:#FF5A60;
+    background-color: #fff9f9;
+    border: 1px solid #ffdada
+}
+
+@media screen and (max-width: 768px) {
+    .image-container{
+        display: none;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+
+    .modalContainer{
+        width: 414px;
+    }
+    .mobile{
+        display: block;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile-footer{
+        position: fixed;
+        bottom: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-form{
+        width: 35%;
+        height: 45px;
+    }
+  }
